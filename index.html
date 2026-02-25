@@ -1,13 +1,12 @@
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 
 <!-- ======================================================================= -->
 <style type="text/css">
   body {
-    font-family: "Crimson Text","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight:300;
-    font-size:18px;
+    font-family: "Crimson Text", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -19,7 +18,7 @@
   }
 
   code {
-    font-family: "SFMono-Regular","Consolas","Liberation Mono","Menlo",monospace;
+    font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
     overflow: scroll;
   }
 
@@ -30,12 +29,12 @@
 
   h1 {
     font-family: "Source Sans Pro";
-    font-weight:300;
+    font-weight: 300;
   }
 
   div {
     max-width: 95%;
-    margin:auto;
+    margin: auto;
     padding: 10px;
   }
 
@@ -58,29 +57,29 @@
     }
   }
 
-      .table-like hr {
-          width: 100%;
+  .table-like hr {
+    width: 100%;
     flex-basis: 100%;
     height: 0;
     margin: 0;
     border: 0;
-      }
+  }
 
   .disclaimerbox {
     background-color: #eee;
     border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     padding: 20px;
   }
 
   video.header-vid {
     height: 140px;
     border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
 
   img {
@@ -98,23 +97,24 @@
   img.header-img {
     height: 140px;
     border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
 
   img.rounded {
     border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
 
-  a:link,a:visited
-  {
+  a:link,
+  a:visited {
     color: #1367a7;
     text-decoration: none;
   }
+
   a:hover {
     color: #208799;
   }
@@ -125,31 +125,49 @@
     font-size: 22px;
   }
 
-  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+  .layered-paper-big {
+    /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
     box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-            15px 15px 0 0px #fff, /* The fourth layer */
-            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-            20px 20px 0 0px #fff, /* The fifth layer */
-            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-            25px 25px 0 0px #fff, /* The fifth layer */
-            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+      0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The top layer shadow */
+      5px 5px 0 0px #fff,
+      /* The second layer */
+      5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The second layer shadow */
+      10px 10px 0 0px #fff,
+      /* The third layer */
+      10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The third layer shadow */
+      15px 15px 0 0px #fff,
+      /* The fourth layer */
+      15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The fourth layer shadow */
+      20px 20px 0 0px #fff,
+      /* The fifth layer */
+      20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The fifth layer shadow */
+      25px 25px 0 0px #fff,
+      /* The fifth layer */
+      25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+    /* The fifth layer shadow */
     margin-left: 10px;
     margin-right: 45px;
   }
 
 
-  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+  .layered-paper {
+    /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
     box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+      0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The top layer shadow */
+      5px 5px 0 0px #fff,
+      /* The second layer */
+      5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+      /* The second layer shadow */
+      10px 10px 0 0px #fff,
+      /* The third layer */
+      10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+    /* The third layer shadow */
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 30px;
@@ -158,12 +176,11 @@
 
   .vert-cent {
     position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  hr
-  {
+  hr {
     border: 0;
     height: 1px;
     max-width: 1100px;
@@ -171,11 +188,13 @@
   }
 
   #authors td {
-    padding-bottom:5px;
-    padding-top:30px;
+    padding-bottom: 5px;
+    padding-top: 30px;
   }
 
-  .mySlides {display: none}
+  .mySlides {
+    display: none
+  }
 
   /* Slideshow container */
   .slideshow-container {
@@ -185,7 +204,8 @@
   }
 
   /* Next & previous buttons */
-  .prev, .next {
+  .prev,
+  .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -207,8 +227,9 @@
   }
 
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   /* Caption text */
@@ -241,7 +262,8 @@
     transition: background-color 0.6s ease;
   }
 
-  .active, .dot:hover {
+  .active,
+  .dot:hover {
     background-color: #717171;
   }
 
@@ -252,85 +274,127 @@
   }
 
   @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
   }
 
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
   }
 </style>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap"
+  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+  rel="stylesheet">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <head>
-<div max-width=100%>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Force Policy: Learning Hybrid Force-Position Control Policy under Interaction Frame for Contact-Rich Manipulation</title>
-<meta name="HandheldFriendly" content="True" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="referrer" content="no-referrer-when-downgrade" />
+  <div max-width=100%>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Force Policy: Learning Hybrid Force-Position Control Policy under Interaction Frame for Contact-Rich
+      Manipulation</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 </head>
 
 <body>
-    <div style="max-width:900px">
+  <div style="max-width:900px">
 
-    </div>
-    <br><center><span style="font-size:60px;font-weight:bold;font-family:Source Sans Pro;"><i>Force Policy</i></span></center><br/>
-    <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">Learning Hybrid Force-Position Control Policy under <br> Interaction Frame for Contact-Rich Manipulation</span></center><br/>
-    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-        <hr>
-        <center><span style="font-size:25px" class="line-break">
-          <a href="https://tonyfang.net/">Hongjie Fang*</a>&nbsp;&nbsp;&nbsp;
-          <a href="">Shirun Tang*</a>&nbsp;&nbsp;&nbsp;
-          <a href="">Mingyu Mei*</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://github.com/1JI0O">Haoxiang Qin</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://alan-heoooh.github.io/">Zihao He</a>&nbsp;&nbsp;&nbsp;
-          <a href="mailto:jjchen20@sjtu.edu.cn">Jingjing Chen</a> <br>
-          <a href="mailto:fyyy0407@sjtu.edu.cn">Ying Feng</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://scholar.google.com/citations?user=bK1fWXcAAAAJ">Chenxi Wang</a>&nbsp;&nbsp;&nbsp;
-          <a href="mailto:wanxi.liu@flexiv.com">Wanxi Liu</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://person.zju.edu.cn/en/zaixinghe">Zaixing He</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://www.mvig.org/">Cewu Lu</a>&nbsp;&nbsp;&nbsp;
-          <a href="mailto:shiquan.wang@flexiv.com">Shiquan Wang†</a>&nbsp;&nbsp;&nbsp;
-        </span></center>
-    </div>
-    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-        <hr>
-        <center><span style="font-size:20px" class="line-break">Shanghai Jiao Tong University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noematrix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flexiv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shanghai Innovation Institute</span></center>
-    </div>
-    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-        <hr>
-        <center><span style="font-size:20px" class="line-break">*Equal Contribution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;†Corresponding Author</span></center>
-    </div>
+  </div>
+  <br>
+  <center><img src="assets/img/red_logo.png" alt="Force Policy logo" style="max-width: 460px; width: 100%; height: auto;" /></center>
+  <br />
+  <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">Learning Hybrid Force-Position
+      Control Policy under <br> Interaction Frame for Contact-Rich Manipulation</span></center><br />
+  <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+    <hr>
+    <center><span style="font-size:25px" class="line-break">
+        <a href="https://tonyfang.net/">Hongjie Fang*</a>&nbsp;&nbsp;&nbsp;
+        <a href="">Shirun Tang*</a>&nbsp;&nbsp;&nbsp;
+        <a href="">Mingyu Mei*</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/1JI0O">Haoxiang Qin</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://alan-heoooh.github.io/">Zihao He</a>&nbsp;&nbsp;&nbsp;
+        <a href="mailto:jjchen20@sjtu.edu.cn">Jingjing Chen</a> <br>
+        <a href="mailto:fyyy0407@sjtu.edu.cn">Ying Feng</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://scholar.google.com/citations?user=bK1fWXcAAAAJ">Chenxi Wang</a>&nbsp;&nbsp;&nbsp;
+        <a href="mailto:wanxi.liu@flexiv.com">Wanxi Liu</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://person.zju.edu.cn/en/zaixinghe">Zaixing He</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.mvig.org/">Cewu Lu</a>&nbsp;&nbsp;&nbsp;
+        <a href="mailto:shiquan.wang@flexiv.com">Shiquan Wang†</a>&nbsp;&nbsp;&nbsp;
+      </span></center>
+  </div>
+  <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+    <hr>
+    <center><span style="font-size:20px" class="line-break">Shanghai Jiao Tong
+        University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noematrix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zhejiang
+        University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flexiv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shanghai Innovation Institute</span>
+    </center>
+  </div>
+  <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+    <hr>
+    <center><span style="font-size:20px" class="line-break">*Equal
+        Contribution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;†Corresponding Author</span></center>
+  </div>
 
-    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-        <hr>
-        <center><span style="font-size:25px" class="line-break">&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><u>[Paper Comming Soon]</u></a></span><span style="font-size:25px" class="line-break">&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><u>[Code Comming Soon]</u></a></span></center>
-    </div>
+  <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+    <hr>
+    <center><span style="font-size:25px" class="line-break">&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><u>[Paper Comming
+            Soon]</u></a></span><span style="font-size:25px" class="line-break">&nbsp;&nbsp;&nbsp;&nbsp;<a
+          href=""><u>[Code Comming Soon]</u></a></span></center>
+  </div>
 
-    <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
-        <hr>
-    </div>
-    
-    <div style="width:800px; margin:0 auto" align="justify">
-      <p> Contact-rich manipulation demands human-like integration of perception and force feedback: vision should guide task progress, while high-frequency interaction control must stabilize contact under uncertainty. Existing learning-based policies often entangle these roles in a monolithic network, trading off global generalization against stable local refinement, while control-centric approaches typically assume a known task structure or learn only controller parameters rather than the structure itself. In this paper, we formalize a physically grounded interaction frame, an instantaneous local basis that decouples force regulation from motion execution, and propose a method to recover it from demonstrations. Based on this, we address both issues by proposing <b><i>Force Policy</i></b>, a global-local vision-force policy in which a global policy guides free-space actions using vision, and upon contact, a high-frequency local policy with force feedback estimates the interaction frame and executes hybrid force-position control for stable interaction. Real-world experiments across diverse contact-rich tasks show consistent gains over strong baselines, with more robust contact establishment, more accurate force regulation, and reliable generalization to novel objects with varied geometries and physical properties, ultimately improving both contact stability and execution quality.  </p>
-    </div>
+
+  <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+    <hr>
+  </div>
+
+  <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qWgFl2AjMhk?si=4AiyA8IM1KlNiOu1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  
+
+  <div style="width:800px; margin:0 auto" align="justify">
+    <p> Contact-rich manipulation demands human-like integration of perception and force feedback: vision should guide
+      task progress, while high-frequency interaction control must stabilize contact under uncertainty. Existing
+      learning-based policies often entangle these roles in a monolithic network, trading off global generalization
+      against stable local refinement, while control-centric approaches typically assume a known task structure or learn
+      only controller parameters rather than the structure itself. In this paper, we formalize a physically grounded
+      interaction frame, an instantaneous local basis that decouples force regulation from motion execution, and propose
+      a method to recover it from demonstrations. Based on this, we address both issues by proposing <b><i>Force
+          Policy</i></b>, a global-local vision-force policy in which a global policy guides free-space actions using
+      vision, and upon contact, a high-frequency local policy with force feedback estimates the interaction frame and
+      executes hybrid force-position control for stable interaction. Real-world experiments across diverse contact-rich
+      tasks show consistent gains over strong baselines, with more robust contact establishment, more accurate force
+      regulation, and reliable generalization to novel objects with varied geometries and physical properties,
+      ultimately improving both contact stability and execution quality. </p>
+  </div>
 
 
 
   <div style="max-width:900px">
     <hr>
-    <center id="bibtex"><h1>BibTeX</h1></center>
+    <center id="bibtex">
+      <h1>BibTeX</h1>
+    </center>
     <div class="description">
       <pre style="overflow-x:auto; overflow-y:hidden; white-space:pre"><code>@article{fang2026force,
     title   = {Force Policy: Learning Hybrid Force-Position Control Policy under Interaction Frame for Contact-Rich Manipulation},
@@ -341,22 +405,22 @@
     </div>
   </div>
 
-    <div style="max-width:900px">
-      <div class="description">
-        <p>
-          <p align="right">
-          Website template: <a href="https://bland.website/">Allan Zhou</a>
-          <br>
-          Modified from <a href="https://tonyzhaozh.github.io/aloha/">ALOHA @ Tony Z. Zhao</a>
-        </p>
-      </div>
-
+  <div style="max-width:900px">
+    <div class="description">
+      <p>
+      <p align="right">
+        Website template: <a href="https://bland.website/">Allan Zhou</a>
+        <br>
+        Modified from <a href="https://tonyzhaozh.github.io/aloha/">ALOHA @ Tony Z. Zhao</a>
+      </p>
     </div>
 
+  </div>
 
 
 
-    <!-- <script>
+
+  <!-- <script>
       const Slideshow = {
         slideIndex: 1,
         name: "",
@@ -415,4 +479,5 @@
 
 
 </body>
+
 </html>
