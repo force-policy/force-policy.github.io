@@ -7,8 +7,7 @@
     font-family: "Crimson Text", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
     width: 100%;
   }
 
@@ -292,6 +291,114 @@
       font-size: 11px
     }
   }
+
+  .top-menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+    color: #000;
+  }
+
+  .top-menu-details {
+    max-width: 1000px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 0px 0px;
+    box-sizing: border-box;
+  }
+
+  .top-menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    gap: 12px;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+  }
+
+  .top-menu-content>* {
+    margin: 0;
+  }
+
+  .top-menu-content a,
+  .nav-submenu-trigger {
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 9px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .top-menu-content a:hover {
+    background: #f4f4f4;
+  }
+
+  .top-menu-details,
+  .top-menu-details a {
+    color: #000;
+  }
+
+  .nav-submenu {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-submenu-trigger {
+    margin: 0;
+    border-radius: 6px;
+    cursor: default;
+    user-select: none;
+  }
+
+  .nav-submenu:hover .nav-submenu-trigger,
+  .nav-submenu:focus-within .nav-submenu-trigger {
+    background: #f4f4f4;
+  }
+
+  .nav-submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 120px;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 6px 0;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+  }
+
+  .nav-submenu:hover .nav-submenu-list,
+  .nav-submenu:focus-within .nav-submenu-list {
+    display: block;
+  }
+
+  .nav-submenu-list a {
+    display: block;
+    height: auto;
+    padding: 8px 8px;
+    border-radius: 0;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+  }
 </style>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -305,23 +412,44 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <head>
-  <div max-width=100%>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Force Policy: Learning Hybrid Force-Position Control Policy under Interaction Frame for Contact-Rich
-      Manipulation</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Force Policy: Learning Hybrid Force-Position Control Policy under Interaction Frame for Contact-Rich
+    Manipulation</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
 </head>
 
 <body>
-  <div style="max-width:900px">
-
+  <div class="top-menu">
+    <div class="top-menu-details">
+      <div class="top-menu-content">
+        <a href="#top">Home</a>
+        <a href="#video">Video</a>
+        <a href="#if">Interaction Frame</a>
+        <a href="#policy">Force Policy</a>
+        <a href="#exp">Experiments</a>
+        <div class="nav-submenu">
+          <span class="nav-submenu-trigger">More Research</span>
+          <div class="nav-submenu-list">
+            <a href="http://rise-policy.github.io/">RISE</a>
+            <a href="https://airexo.tech/airexo2">RISE-2</a>
+            <a href="https://tonyfang.net/FoAR/">FoAR</a>
+            <a href="https://tonyfang.net/history/">HistRISE</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <center><img src="assets/img/red_logo.png" alt="Force Policy logo" style="max-width: 300px; width: 100%; height: auto;" /></center>
-  <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">Learning Hybrid Force-Position
-      Control Policy under <br> Interaction Frame for Contact-Rich Manipulation</span></center><br />
+
+  <div id="top">
+    <center><img src="assets/img/red_logo.png" alt="Force Policy logo"
+        style="max-width: 300px; width: 100%; height: auto;" /></center>
+    <center><span style="font-size:44px;font-weight:bold;font-family:Source Sans Pro;">Learning Hybrid Force-Position
+        Control Policy under <br> Interaction Frame for Contact-Rich Manipulation</span></center><br />
+  </div>
+
   <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
     <hr>
     <center><span style="font-size:25px" class="line-break">
@@ -364,14 +492,18 @@
     <hr>
   </div>
 
-  <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;">
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/qWgFl2AjMhk?si=4AiyA8IM1KlNiOu1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="table-like" id="video" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/qWgFl2AjMhk?si=4AiyA8IM1KlNiOu1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
-  
 
-  <div style="width:800px; margin:0 auto" align="justify">
-    <p> <b>[Abstract]</b> Contact-rich manipulation demands human-like integration of perception and force feedback: vision should guide
+
+  <div style="width:800px; margin:0 auto" id="abstract" align="justify">
+    <p> <b>[Abstract]</b>
+      Contact-rich manipulation demands human-like integration of perception and force feedback: vision should guide
       task progress, while high-frequency interaction control must stabilize contact under uncertainty. Existing
       learning-based policies often entangle these roles in a monolithic network, trading off global generalization
       against stable local refinement, while control-centric approaches typically assume a known task structure or learn
@@ -385,6 +517,99 @@
       regulation, and reliable generalization to novel objects with varied geometries and physical properties,
       ultimately improving both contact stability and execution quality. </p>
   </div>
+
+  <div style="width:900px; margin:0 auto" id="if" align="justify">
+    <hr>
+    <center>
+      <h1>Interaction Frame: <i>Explicit Contact Structure</i></h1>
+    </center>
+    <p>
+      We use the <i>interaction frame (IF)</i> to explicitly describe the contact structure. IF is purely defined from
+      the physical response, using stiffness as a spectral proxy to estimate the local geometry. We focus on tasks
+      maintaining topologically invariant contact, excluding irreversible changes like fracture and plastic
+      deformations.
+      For these locally conservative contacts, the environmental stiffness is geometry-induced, as resistance arises
+      directly from physical boundaries. This inherent physical causality implies that the principal axes of stiffness
+      structurally align with the local surface geometry, allowing us to recover the geometric frame from physical
+      observations.
+    </p>
+
+    <div class="table-like" style="justify-content:space-evenly;margin:auto;padding:0px;">
+      <img src="assets/img/if.jpg" alt="poiflicy" style="width:450px;">
+    </div>
+
+    <p>
+      We formalize two approximation strategies, each tailored to a different dominant power source (dissipative
+      residual and structural residual). Accordingly, we adopt an adaptive scheme: given the initial visual context
+      and task description, we prompt <a href="https://gemini.google.com/">Gemini 3 Pro</a> to identify whether the
+      dissipative residual or structural residual is dominant based on high-level semantics, and then apply the
+      corresponding reconstruction formulation.
+    </p>
+
+  </div>
+
+  <div style="width:900px; margin:0 auto" id="policy" align="justify">
+    <hr>
+    <center>
+      <h1>Force Policy: <i>Global-Local Vision-Force Policy</i></h1>
+    </center>
+    <p>Contact-rich manipulation alternates between two regimes: vision-guided motion in free space and force-governed
+      interaction at contact. Hence, we factor the policy accordingly. Global motion is handled by a vision policy that
+      reasons over geometry and long-horizon sequencing; outside contact, force readings are largely uninformative and
+      often dominated by sensor noise or incidental touches. Local interaction is handled by a high-frequency force
+      policy that reacts to end-effector proprioception and force/torque signals to regulate contact dynamics. This
+      decomposition assigns each modality to the scale where it is most informative: vision drives task progress, while
+      force enables responsive, stable interaction control.</p>
+
+    <div class="table-like" style="justify-content:space-evenly;margin:auto;padding:0px;">
+      <img src="assets/img/policy.jpg" alt="policy" style="width:900px;">
+    </div>
+
+    <p>
+      We also introduce a dual-policy asynchronous scheduler during deployment to coordinate a global vision policy with
+      a high-frequency local force policy, while preventing global inference latency from degrading closed-loop control.
+      The scheduler (1) runs both policies asynchronously and uses a router with smooth state transitions to avoid
+      discontinuities during policy switching; and (2) compensates for delayed global outputs by time-aligning and
+      merging them into the execution stream in a latency-aware manner, enforcing trajectory smoothness so executed
+      motions remain stable and physically consistent. This smoothing also reduces jerk-induced inertial force
+      transients, improving force-sensing fidelity during manipulation.
+    </p>
+
+  </div>
+
+
+  <div style="width:900px; margin:0 auto" id="if" align="justify">
+    <hr>
+    <center>
+      <h1>Experiments</h1>
+    </center>
+    <p>
+      We design three tasks spanning two categories (polishing and insertion) to evaluate different policies for
+      contact-rich manipulation. The descriptions on the right highlight the key challenges of each task compared to
+      similar tasks in prior literature. All tasks require highly accurate force regulation to be successfully
+      completed.
+    </p>
+
+    <div class="table-like" style="justify-content:space-evenly;margin:auto;padding:0px;">
+      <img src="assets/img/tasks.jpg" alt="tasks" style="width:900px;">
+    </div>
+
+    <p>
+      We compare Force Policy with vision-only baselines (<a href="https://airexo.tech/airexo2">RISE-2</a> and <a
+        href="https://www.pi.website/blog/pi05">π<sub>0.5</sub></a>) and force-aware baselines (<a
+        href="https://reactive-diffusion-policy.github.io/">RDP</a>, <a href="https://tonyfang.net/FoAR/">FoAR</a>, <a
+        href="https://sites.google.com/view/forcevla2025">ForceVLA</a> and <a
+        href="https://zzongzheng0918.github.io/Torque-Aware-VLA.github.io/">TA-VLA</a>). Force Policy exhibits
+      significant effectiveness in handling a diverse range of contact-rich tasks, outperforming previous vision-only
+      or force-aware policies.
+    </p>
+
+    <div class="table-like" style="justify-content:space-evenly;margin:auto;padding:0px;">
+      <img src="assets/img/result.png" alt="result" style="width:900px;">
+    </div>
+
+  </div>
+
 
 
 
