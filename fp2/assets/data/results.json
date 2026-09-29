@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "source": {"path": "ICRA2027_FP2.pdf", "primaryTable": "Table I", "ablationTable": "Table II", "primaryTablePage": 7, "ablationTablePage": 6},
+  "defaultBackbone": "pi0",
+  "paper": {
+    "title": "FP2: Equipping Robotic Foundation Models with Force Control",
+    "authors": ["Hongjie Fang", "Shirun Tang", "Junjian Hu", "Shidong Zhang", "Zhongze Zhang", "Linhao Chen", "Dehai Li", "Mingyu Mei", "Wanxi Liu", "Cewu Lu", "Shiquan Wang"],
+    "equalContribution": ["Hongjie Fang", "Shirun Tang"],
+    "correspondingAuthor": "Shiquan Wang",
+    "affiliations": [
+      {"id": 1, "name": "FORTE Lab", "pdfName": "SJTU"},
+      {"id": 2, "name": "Noematrix"},
+      {"id": 3, "name": "Flexiv"},
+      {"id": 4, "name": "SJTU", "pdfName": "SII"},
+      {"id": 5, "name": "UPenn"},
+      {"id": 6, "name": "FDU"},
+      {"id": 7, "name": "UIUC"},
+      {"id": 8, "name": "ZJU"}
+    ],
+    "authorAffiliations": {
+      "Hongjie Fang": [1, 2],
+      "Shirun Tang": [2],
+      "Junjian Hu": [2, 5],
+      "Shidong Zhang": [2, 6],
+      "Zhongze Zhang": [2, 7],
+      "Linhao Chen": [2],
+      "Dehai Li": [2],
+      "Mingyu Mei": [8],
+      "Wanxi Liu": [2, 3],
+      "Cewu Lu": [1, 2, 3, 4],
+      "Shiquan Wang": [2, 3]
+    },
+    "affiliationSource": "Author numbering comes from ICRA2027_FP2.pdf, page 1. Per the user's September 22, 2026 correction, website affiliations 1–4 are FORTE Lab, Noematrix, Flexiv, and SJTU; affiliations 5–8 and author superscript numbers remain unchanged. pdfName preserves the original PDF label where it differs from the user-approved website name. The website uses † for the corresponding-author mark.",
+    "metadataNote": "Title and author order transcribed from the visible first page; embedded PDF title and author fields are blank. The filename does not establish venue acceptance or publication status."
+  },
+  "tasks": [
+    {"id": "flip-box", "label": "Flip Box", "metric": "SR", "description": "Push the box toward a fixture and flip it upright.", "insight": "Maintaining contact matters as the contact point and force direction change.", "trials": 25, "demonstrations": 50},
+    {"id": "ev-charger", "label": "Insert EV Charger", "metric": "SR", "description": "Align the EV charger with the socket and insert it.", "insight": "Insertion requires substantial force in the correct direction; misalignment can trigger overload errors.", "trials": 25, "demonstrations": 50},
+    {"id": "insert-peg", "label": "Insert Peg", "metric": "SR", "description": "Grasp a peg, align it with the hole, and insert it.", "insight": "The 0.02 mm tolerance makes alignment and force direction critical.", "trials": 25, "demonstrations": 200},
+    {"id": "wipe-curve", "label": "Wipe Curve", "metric": "CR", "description": "Wipe along a curved surface to remove the marked regions.", "insight": "Sustained contact and appropriate force direction help remove marks along the curve.", "trials": 25, "demonstrations": 50}
+  ],
+  "backbones": [
+    {"id": "pi0", "label": "π0", "adaptation": "LoRA", "baseline": {"scores": [44, 0, 12, 4], "nfe": [18.531, null, 9.112, 3.085], "average": 15}, "fp2": {"scores": [68, 92, 76, 84], "nfe": [5.278, 0.249, 1.287, 0.666], "average": 80}},
+    {"id": "pi05", "label": "π0.5", "adaptation": "Full fine-tuning", "baseline": {"scores": [40, 0, 32, 97], "nfe": [3.248, null, 5.116, 1.488], "average": 42}, "fp2": {"scores": [92, 56, 52, 100], "nfe": [0.899, 0.438, 1.647, 0.495], "average": 75}},
+    {"id": "gr00t", "label": "GR00T N1.7", "adaptation": "Task-adapted; adaptation type not specified in Table I", "baseline": {"scores": [12, 36, 0, 1], "nfe": [5.836, 1.559, null, null], "average": 12}, "fp2": {"scores": [76, 76, 0, 3], "nfe": [2.076, 1.061, null, null], "average": 39}},
+    {"id": "lawam", "label": "LaWAM", "adaptation": "Task-adapted; adaptation type not specified in Table I", "baseline": {"scores": [32, 0, 4, 64], "nfe": [4.329, null, 1.955, 3.024], "average": 25}, "fp2": {"scores": [48, 20, 24, 65], "nfe": [1.968, 4.309, 1.926, 1.994], "average": 39}}
+  ],
+  "baselines": [
+    {"id": "acp", "label": "ACP", "scores": [80, 20, 52, 77], "nfe": [14.355, 5.202, 3.794, 1.528], "average": 57},
+    {"id": "hybridil", "label": "HybridIL", "scores": [40, 0, 0, 48], "nfe": [5.496, null, null, 0.276], "average": 22},
+    {"id": "force-policy", "label": "Force Policy", "scores": [84, 68, 0, 49], "nfe": [1.522, 2.157, null, 0.406], "average": 50},
+    {"id": "ta-vla", "label": "TA-VLA", "scores": [32, 72, 4, 51], "nfe": [8.525, 1.968, 2.587, 1.241], "average": 40},
+    {"id": "forcevla", "label": "ForceVLA", "scores": [60, 0, 36, 10], "nfe": [6.837, null, 5.958, 1.445], "average": 27}
+  ],
+  "ablations": [
+    {"id": "context-only", "label": "RFM context only", "seen": 4, "novel": 5, "latency": 2.27, "group": "inputs", "novelSuccessCounts": [0, 2, 0, 0]},
+    {"id": "feedback-only", "label": "Wrench and proprioception only", "seen": 36, "novel": 18, "latency": 4.28, "group": "inputs", "novelSuccessCounts": [4, 2, 1, 0]},
+    {"id": "average-pooling", "label": "Average-pooled contextual tokens", "seen": 84, "novel": 75, "latency": 4.49, "group": "representation", "novelSuccessCounts": [10, 8, 7, 5]},
+    {"id": "action-latent", "label": "Action-expert latent", "seen": 88, "novel": 80, "latency": 4.46, "group": "representation", "novelSuccessCounts": [10, 9, 7, 6]},
+    {"id": "wrist-vision", "label": "Add wrist vision", "seen": 92, "novel": 73, "latency": 5.97, "group": "architecture", "novelSuccessCounts": [9, 8, 5, 7]},
+    {"id": "action-regeneration", "label": "Add action re-generation", "seen": 76, "novel": 53, "latency": 13.03, "group": "architecture", "novelSuccessCounts": [7, 8, 5, 1]},
+    {"id": "wrist-and-action", "label": "Add wrist vision and action re-generation", "seen": 88, "novel": 73, "latency": 14.44, "group": "architecture", "novelSuccessCounts": [9, 9, 6, 5]},
+    {"id": "fp2", "label": "FP2 (ours)", "seen": 92, "novel": 88, "latency": 4.48, "group": "ours", "novelSuccessCounts": [10, 9, 9, 7]}
+  ],
+  "figures": [
+    {"id": "method", "src": "assets/images/paper/method.webp", "alt": "FP2 framework: a robotic foundation model generates actions, a compressor summarizes its context, and a force-control policy uses that context plus wrench and proprioceptive history to regulate execution. Below are the three training stages.", "caption": "Figure 2. FP2 separates task-level action generation from force regulation. Training adapts the foundation model, learns contextual compression, then trains the force-control policy.", "page": 3},
+    {"id": "tasks", "src": "assets/images/paper/tasks.webp", "alt": "Four robot task sequences: flipping a box, inserting an EV charger, inserting a peg with 0.02 mm tolerance, and wiping a curved surface. Side panels illustrate contact and force-direction challenges.", "caption": "Figure 3. Four contact-rich tasks test changing contact, directed insertion force, tight-tolerance alignment, and sustained surface contact.", "page": 4},
+    {"id": "interaction", "src": "assets/images/paper/interaction.webp", "alt": "Rollout images and measured force traces compare foundation policies with and without FP2 on all four tasks, illustrating contact loss or insufficient force versus regulated interaction.", "caption": "Figure 4. Representative executions show how FP2 maintains contact and regulates insertion and wiping forces; these are qualitative examples, not aggregate success rates.", "page": 6},
+    {"id": "failures", "src": "assets/images/paper/failures.webp", "alt": "Stacked outcome bars for Flip Box and Insert EV Charger compare four backbones with and without FP2, separating success, position errors, and interaction-related failures across 25 trials each.", "caption": "Figure 5. Failure breakdowns distinguish position errors from interaction-related causes on Flip Box and Insert EV Charger.", "page": 6},
+    {"id": "novel-objects", "src": "assets/images/paper/novel-objects.webp", "alt": "An orange training box and four novel objects varying in color, texture, stiffness, and geometry, including a purple box, a patterned blue box, a wooden box, and a yellow tapered container.", "caption": "Table II, right panel. Training and novel objects for the Flip Box generalization evaluation.", "page": 6}
+  ],
+  "metrics": {
+    "SR": {"label": "Success rate", "unit": "%", "definition": "Percentage of trials that successfully complete the task; used for Flip Box, Insert EV Charger, and Insert Peg."},
+    "CR": {"label": "Completion rate", "unit": "%", "definition": "Fraction of marked regions successfully wiped clean, expressed as a percentage; a continuous completion metric, not binary task success."},
+    "NFE": {"label": "Normalized Force Error", "unit": "dimensionless", "lowerIsBetter": true, "definition": "Root mean square of 3D force deviations outside the demonstration mean ± one standard deviation, normalized by demonstrated variability after temporal normalization.", "eligibility": "Successful trials only; for Wipe Curve, successful continuous-wiping executions only. Null means no valid successful execution is available, not zero error."},
+    "average": {"label": "Average score", "unit": "%", "definition": "Arithmetic mean of the four task metrics (three SR values and one CR value), shown as the integer printed in Table I."},
+    "latency": {"label": "Inference latency", "unit": "ms", "definition": "Force-control policy latency per inference on an NVIDIA RTX 5090 GPU."}
+  },
+  "evaluation": {
+    "trialsPerTask": 25,
+    "sharedTestConfigurations": true,
+    "ablationTask": "flip-box",
+    "ablationBackbone": "pi05",
+    "ablationSeenTrials": 25,
+    "ablationTrialsPerNovelObject": 10,
+    "ablationNovelObjectOrder": ["color", "texture", "stiffness", "geometry"],
+    "ablationTotalNovelTrials": 40,
+    "scoreOrder": ["flip-box", "ev-charger", "insert-peg", "wipe-curve"]
+  },
+  "caveats": [
+    "RFM means robotic foundation model. FP2 regulates physical interaction; it does not replace task-level action generation or geometric reasoning.",
+    "Scores and averages reproduce the paper's rounded percentages; do not replace Table II's 88% novel-object score with 87.5%.",
+    "The initial comparison uses π0 with LoRA: average score 15% to 80%, a gain of 65 percentage points, not 65 percent relative improvement.",
+    "NFE compares successful execution subsets and must not be interpreted as an all-trial error or a success probability.",
+    "A nonzero Wipe Curve completion rate can coexist with unavailable NFE, because partial completion does not imply a successful continuous-wiping execution.",
+    "TA-VLA and ForceVLA use the matched π0 LoRA comparison from Table I; separate full-fine-tuning experiments in the prose are not mixed into these values.",
+    "Table I is on physical PDF page 7. Figures 4 and 5 and Table II are on physical PDF page 6 in the supplied file."
+  ]
+}

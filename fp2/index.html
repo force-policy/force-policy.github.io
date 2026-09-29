@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FP2 equips robotic foundation models with force control: keep task-level action generation, add lightweight, high-frequency interaction regulation. Explore the paper, results, and task demonstrations.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="FP2: Equipping Robotic Foundation Models with Force Control">
+  <meta property="og:description" content="Keep action generation. Add force regulation. Four foundation models, four contact-rich tasks, and interactive experiment comparisons.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/paper/tasks.webp">
+  <title>FP2 — Equipping Robotic Foundation Models with Force Control</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/method.css">
+  <script type="module" src="assets/js/site.js"></script>
+  <script type="module" src="assets/js/method.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="header-inner" aria-label="Main navigation">
+      <a href="#main">Home</a>
+      <a href="#abstract">Abstract</a>
+      <a href="#insight">Insight</a>
+      <a href="#method">Method</a>
+      <a href="#experiments">Experiments</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#citation">BibTeX</a>
+      <a href="../" title="Previous work">Force Policy</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-width" aria-labelledby="page-title">
+      <div class="paper-header">
+        <h1 id="page-title">FP2: Equipping Robotic Foundation Models<br class="desktop-break"> with Force Control</h1>
+        <ul class="authors" aria-label="Authors">
+          <li>Hongjie Fang<sup aria-label="">1,2,4*</sup></li>
+          <li>Shirun Tang<sup aria-label="">1,2,*</sup></li>
+          <li>Junjian Hu<sup aria-label="">1,2,5</sup></li>
+          <li>Shidong Zhang<sup aria-label="">1,2,6</sup></li>
+          <li>Zhongze Zhang<sup aria-label="">1,2,7</sup></li>
+          <li>Linhao Chen<sup aria-label="">1,2</sup></li>
+          <li>Dehai Li<sup aria-label="">1,2</sup></li>
+          <li>Mingyu Mei<sup aria-label="">8</sup></li>
+          <li>Wanxi Liu<sup aria-label="">1,2,3</sup></li>
+          <li>Cewu Lu<sup aria-label="">2,3,4,9</sup></li>
+          <li>Shiquan Wang<sup aria-label="">1,2,3,†</sup></li>
+        </ul>
+        <ul class="affiliations" aria-label="Author affiliations">
+          <li><sup>1</sup>FORTE Lab</li>
+          <li><sup>2</sup>Noematrix</li>
+          <li><sup>3</sup>Flexiv</li>
+          <li><sup>4</sup>SJTU</li>
+          <li><sup>5</sup>UPenn</li>
+          <li><sup>6</sup>FDU</li>
+          <li><sup>7</sup>UIUC</li>
+          <li><sup>8</sup>ZJU</li>
+          <li><sup>9</sup>SII</li>
+        </ul>
+        <p class="author-note">* Equal contribution. † Corresponding author.</p>
+        <div class="hero-links">
+          <span class="resource-placeholder">[Paper] <small>Coming soon</small></span>
+          <span class="resource-placeholder">[Code] <small>Coming soon</small></span>
+        </div>
+      </div>
+      <p class="teaser-question">Does force control need to be learned inside the foundation model?</p>
+      <div class="showcase">
+        <div class="showcase-topline">
+          <span class="small-label">See the difference</span>
+          <div class="task-pills" id="highlight-tabs" role="group" aria-label="Choose a task highlight">
+            <button type="button" data-highlight="flip-box" aria-pressed="true">Flip Box</button>
+            <button type="button" data-highlight="ev-charger" aria-pressed="false">EV Charger</button>
+            <button type="button" data-highlight="insert-peg" aria-pressed="false">Insert Peg</button>
+            <button type="button" data-highlight="wipe-curve" aria-pressed="false">Wipe Curve</button>
+          </div>
+        </div>
+        <div id="hero-player" class="player-host"><div class="media-placeholder"><span class="placeholder-symbol" aria-hidden="true">▷</span><p>Loading the task highlights…</p></div></div>
+        <div class="showcase-caption"><p id="highlight-caption">A closer look at interaction, with and without FP2.</p></div>
+      </div>
+      <p class="hero-thesis">Keep task-level <strong>action generation</strong> in the foundation policy.<br class="desktop-break"> Add lightweight, high-frequency <strong>force regulation</strong> downstream.</p>
+    </section>
+
+    <section id="abstract" class="section section-width" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <div class="abstract-text"><p>Robotic foundation models (RFMs) are increasingly capable of general-purpose manipulation, yet reliable physical interaction remains challenging in contact-rich settings. We present FP2, a lightweight downstream interface that equips task-adapted RFMs with explicit force control while preserving their action-generation capability. FP2 adopts an action-regulation decomposition: the task-adapted RFM serves as a foundation policy responsible for task-level action generation, while a high-frequency force control policy focuses solely on interaction regulation. To condition force regulation on the ongoing manipulation, FP2 compresses foundation-policy contextual representations and combines them with wrench and proprioceptive histories to predict structured force-control parameters. We evaluate FP2 with four RFM backbones across four real-world contact-rich manipulation tasks. FP2 consistently improves task performance and force regulation quality over the corresponding foundation policies, while comparing favorably with representative force-aware and force-control baselines. Ablations further show that foundation-policy context and physical feedback are complementary for effective force regulation, while preserving foundation-policy action generation improves both efficiency and novel-object generalization.</p></div>
+    </section>
+
+    <section id="insight" class="section section-width" aria-labelledby="insight-title">
+      <div class="section-heading"><h2 id="insight-title">Separating Action Generation from Interaction Regulation</h2></div>
+      <div class="insight-layout">
+        <div class="insight-copy">
+          <p>A robot can generate a plausible task-level motion and still lose contact, apply insufficient force, or jam during execution.</p>
+          <p>Robotic foundation models (RFMs) bring broad task understanding and strong motion priors. But contact-rich manipulation also requires regulating <strong>how the robot interacts</strong> with the environment.</p>
+          <p>FP2 separates these responsibilities. The task-adapted foundation policy keeps generating actions. A lightweight downstream policy uses physical feedback to regulate their execution.</p>
+          <div class="takeaway"><p><strong>Force control does not need to be learned inside the foundation model.</strong> FP2 preserves task-level action generation and introduces force only into downstream interaction regulation.</p></div>
+        </div>
+        <ol class="insight-principles">
+          <li><strong>Preserve the motion prior.</strong> Keep task-level action generation in the foundation policy. Freeze it after task adaptation.</li>
+          <li><strong>React to physical feedback.</strong> Combine the model’s task context with recent force, torque, and proprioceptive histories.</li>
+          <li><strong>Regulate, rather than re-predict.</strong> Predict the interaction frame, force–position selection, and desired wrench—not another set of actions.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="method" class="section method-section" aria-labelledby="method-title">
+      <div class="section-width">
+        <div class="section-heading"><h2 id="method-title">Equipping Foundation Policies with Force Control</h2><p class="lead"><strong>Preserve</strong> action generation. <strong>Compress</strong> context. <strong>Regulate</strong> physical interaction.</p></div>
+        <div class="method-demo" id="method-demo" data-phase="0" data-playing="false">
+          <div class="architecture" aria-label="Animated schematic: a 2 Hz foundation policy supplies action chunks and compressed context. A 50 Hz force-control policy combines cached context with force and proprioception. Both feed a hybrid force-position controller running at 1 kHz.">
+            <div class="architecture-input"><span class="vision-input">Vision + language</span><span class="physical-input">Wrench + proprioceptive history</span></div>
+            <div class="architecture-policies">
+              <div class="policy-block foundation"><div class="policy-top"><span class="small-label">Action generation</span><span class="frequency">2 Hz</span></div><h3>Foundation policy</h3><p>Task-adapted. Then frozen.</p><div class="model-tags"><span>π₀</span><span>π₀.₅</span><span>GR00T N1.7</span><span>LaWAM</span></div><div class="token-sequence" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><small>Contextual tokens</small></div></div>
+              <div class="context-bridge"><span>Context</span><span class="bridge-arrow" aria-hidden="true">→</span><span class="compressor">Compress</span><span class="bridge-arrow" aria-hidden="true">→</span><span class="context-packet" aria-hidden="true"></span></div>
+              <div class="policy-block force"><p class="physical-input-mobile">↓ Wrench + proprioceptive history</p><div class="policy-top"><span class="small-label">Interaction regulation</span><span class="frequency">50 Hz</span></div><h3>Force-control policy</h3><p>Lightweight. Physically reactive.</p><div class="control-tags"><span>Frame Σ</span><span>Selection S</span><span>Wrench Ŵ</span></div><div class="feedback-stream" aria-hidden="true"><svg viewBox="0 0 150 25"><path class="feedback-line" d="M0 14 H15 L22 7 L29 20 L36 5 L43 17 L50 11 L57 14 H76 L84 4 L92 21 L100 9 L108 14 H150"/><circle class="feedback-dot" r="3" cx="0" cy="14"/></svg><small>Fresh physical feedback</small></div></div>
+            </div>
+            <div class="architecture-outputs"><div class="motion-output"><span class="flow-down" aria-hidden="true">↓<i></i></span><p><span class="motion-origin">From foundation policy</span>Original action chunks <small>15 Hz waypoints → 50 Hz references</small></p></div><div class="force-output"><span class="flow-down" aria-hidden="true">↓<i></i></span><p>Structured force-control parameters <small>No action re-generation</small></p></div></div>
+            <div class="controller"><span class="controller-indicator" aria-hidden="true"></span><span>Hybrid force–position controller</span><span class="frequency">1 kHz</span></div>
+            <div class="execution-preview" aria-hidden="true"><span class="execution-label">Action reference</span><svg viewBox="0 0 340 42"><path class="reference-path" d="M10 26 C80 26 100 10 170 10 S265 26 330 26"/><circle class="reference-waypoint" cx="10" cy="26" r="3"/><circle class="reference-waypoint" cx="90" cy="18" r="3"/><circle class="reference-waypoint" cx="170" cy="10" r="3"/><circle class="reference-waypoint" cx="250" cy="18" r="3"/><circle class="reference-waypoint" cx="330" cy="26" r="3"/><g class="execution-tool"><path d="M-7 -16 V-7 H7 V-16 M0 -7 V-1"/><circle r="3"/><path class="force-vector" d="M0 6 V18 M-3 14 L0 18 L3 14"/></g></svg><span class="execution-label">Regulated interaction</span></div>
+          </div>
+          <div class="method-explanation"><span class="method-step-count" id="method-step-count">01 / 04</span><div><h3 id="method-step-title">Keep task-level action generation.</h3><p id="method-step-description">The task-adapted foundation policy predicts an action chunk and contextual tokens. Force is not an input to this model.</p></div></div>
+          <p class="method-disclaimer">Illustrative data flow, slowed down for explanation—not measured timing or force data. In deployment, both policies run concurrently; the force-control policy reuses cached context between foundation-policy updates.</p>
+        </div>
+        <div class="training-steps"><div><span>01</span><p><strong>Adapt the foundation model.</strong> Use its native observations, without force input.</p></div><div><span>02</span><p><strong>Compress its context.</strong> Learn a compact token through self-supervised reconstruction.</p></div><div><span>03</span><p><strong>Train force regulation.</strong> Keep the foundation policy and compressor frozen.</p></div></div>
+        <details open class="text-details"><summary>See the full architecture from the paper <span aria-hidden="true">+</span></summary><figure id="method-figure"><p class="muted">The full framework is in Figure 2 of the paper <small>(coming soon)</small>.</p></figure></details>
+      </div>
+    </section>
+
+    <section id="experiments" class="section section-width" aria-labelledby="experiments-title">
+      <div class="section-heading"><h2 id="experiments-title">Experiments</h2></div>
+      <figure id="task-figure" class="paper-figure"></figure>
+      <h3>Contact-Rich Manipulation across Foundation Policies</h3>
+      <p>We evaluate <strong>four foundation policies</strong> and <strong>five force-aware or force-control baselines</strong> on four real-world tasks, using 25 test configurations per task. Select a task and method below to inspect the results and evaluation videos.</p>
+      <section id="main-results" class="results-section" aria-labelledby="main-results-title">
+        <h3 id="main-results-title">All Backbones and Baselines</h3>
+        <div id="full-results" class="table-scroll" tabindex="0" role="region" aria-label="Full task performance results"></div>
+        <p class="fine-print">Average score is the arithmetic mean of the four task metrics (three success rates and Wipe Curve completion rate), rounded as in Table I. Normalized Force Error (NFE) measures departure from demonstrated force ranges; lower is better. NFE uses valid successful executions only, and successful continuous-wiping executions for Wipe Curve. “—” means no valid successful execution is available.</p>
+      </section>
+      <div id="experiment-insight" class="takeaway"><p><strong>FP2 improves physical interaction while retaining foundation-policy action generation.</strong> With π₀ LoRA, the average task score increases from <strong>15% to 80%</strong>, a gain of <strong>65 percentage points</strong> (Table I). The average combines three success rates and Wipe Curve completion rate.</p></div>
+      <div class="experiment-controls">
+        <div class="task-pills experiment-tabs" id="experiment-tabs" role="group" aria-label="Choose experiment task">
+          <button type="button" data-task="flip-box" aria-pressed="true">Flip Box</button><button type="button" data-task="ev-charger" aria-pressed="false">Insert EV Charger</button><button type="button" data-task="insert-peg" aria-pressed="false">Insert Peg</button><button type="button" data-task="wipe-curve" aria-pressed="false">Wipe Curve</button>
+        </div>
+        <label class="backbone-select">Method <select id="backbone" aria-label="Evaluation method">
+          <optgroup label="Foundation policy vs. its FP2 version">
+            <option value="pi0">π₀ · LoRA</option><option value="pi05">π₀.₅ · full</option><option value="gr00t">GR00T N1.7</option><option value="lawam">LaWAM</option>
+          </optgroup>
+          <optgroup label="Force-aware / force-control baselines">
+            <option value="acp">ACP</option><option value="force-policy">Force Policy</option><option value="hybridil">HybridIL</option><option value="forcevla">ForceVLA</option><option value="ta-vla">TA-VLA</option>
+          </optgroup>
+        </select></label>
+      </div>
+      <div id="experiment-result" class="experiment-result" aria-live="polite"><p class="muted">Loading verified paper results…</p></div>
+      <p id="comparison-protocol" class="fine-print">Each foundation policy is compared with its own FP2 version.</p>
+      <div class="comparison-heading"><h3>Evaluation Videos</h3><span>25 trials per method · edited playback</span></div>
+      <div id="experiment-players" class="comparison-players"><div class="media-placeholder">Loading evaluation videos…</div></div>
+      <p class="fine-print">Each grid contains multiple trials, not one rollout. Playback is independently edited and accelerated; grids are not synchronized trial-by-trial.</p>
+      <section id="failure-analysis" class="failure-analysis" aria-labelledby="failure-analysis-title">
+        <h3 id="failure-analysis-title">Failure Analysis</h3>
+        <figure id="failure-figure" class="paper-figure"></figure>
+        <div class="takeaway"><p><strong>FP2 primarily reduces interaction-related failures.</strong> The remaining failures are more often associated with position mismatch and geometric alignment. Force regulation improves execution of viable task-level motion; it does not replace action generation or geometric reasoning.</p></div>
+      </section>
+    </section>
+
+    <section id="analysis" class="section analysis-section" aria-labelledby="analysis-title"><div class="section-width">
+      <div class="section-heading"><h2 id="analysis-title">Ablations and Analysis</h2></div>
+      <div id="full-ablations" class="table-scroll" tabindex="0" role="region" aria-label="Full ablation results"></div>
+      <p class="fine-print">Table II · Flip Box with π₀.₅ · 40 novel-object trials across color, texture, stiffness, and geometry. Percentages are rounded as in the paper; latency is for the force-control policy on an RTX 5090, not the entire system.</p>
+      <div class="analysis-grid">
+        <article class="analysis-panel"><h3>Are Context and Physical Feedback Complementary?</h3><p>On novel objects in Flip Box, the combined policy succeeds where either input alone is insufficient.</p><div id="input-ablation" class="ablation-bars" aria-label="Novel-object success by policy input"></div></article>
+        <article class="analysis-panel"><h3>Why Preserve Foundation-Policy Action Generation?</h3><p>Re-generating actions downstream reduces novel-object performance and adds inference latency.</p><div id="architecture-ablation" class="ablation-bars" aria-label="Novel-object success with and without action re-generation"></div></article>
+      </div>
+      <div class="generalization-demo"><div><h3>Generalization to Novel Objects</h3><p>Keeping action generation in the foundation policy and removing the extra wrist-camera stream from the force-control policy improves novel-object generalization.</p></div><div id="generalization-player" class="player-host"><div class="media-placeholder">Loading the generalization comparison…</div></div></div>
+    </div></section>
+
+    <section class="section section-width" aria-labelledby="limits-title">
+      <h2 id="limits-title">Limitations and Future Work</h2><p>FP2 assumes the foundation policy provides viable task-level motion. It cannot fully recover from incorrect action generation or geometric reasoning. Force regulation is currently learned at the task level; shared, multi-task interaction skills remain future work.</p>
+    </section>
+    <section id="citation" class="section section-width" aria-labelledby="citation-title">
+      <h2 id="citation-title">BibTeX</h2><div class="citation-heading"><p>Manuscript citation.</p><button id="copy-citation" type="button" class="text-button">Copy BibTeX</button></div><pre><code id="bibtex">@misc{fang2026fp2,
+  title  = {FP2: Equipping Robotic Foundation
+            Models with Force Control},
+  author = {Fang, Hongjie and Tang, Shirun and
+            Hu, Junjian and Zhang, Shidong and
+            Zhang, Zhongze and Chen, Linhao and
+            Li, Dehai and Mei, Mingyu and
+            Liu, Wanxi and Lu, Cewu and
+            Wang, Shiquan},
+  year   = {2026},
+  note   = {Manuscript}
+}</code></pre><p id="citation-status" class="fine-print" role="status" aria-live="polite">See the PDF for the full paper.</p>
+    </section>
+  </main>
+  <footer class="site-footer section-width"><p>FP2: Equipping Robotic Foundation Models with Force Control</p><p>Layout inspired by <a href="https://tonyfang.net/ved/" target="_blank" rel="noopener">VED</a>. <a href="#main">Back to top ↑</a></p></footer>
+
+  <div id="app-error" class="app-error section-width" role="alert" hidden></div>
+  <noscript><div class="noscript-note">The paper and project description are available without JavaScript. Enable JavaScript to view interactive results and task demonstrations.</div></noscript>
+</body>
+</html>

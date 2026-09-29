@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "videos": [
+    {
+      "id": "peg-forceprofile-videos-pair-0015-presentation-pair-0015-contact-guided-search",
+      "title": "Insert Peg — trial 0015 · contact search + |Fz|",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-pair-0015-presentation-pair-0015-contact-guided-search.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-pair-0015-presentation-pair-0015-contact-guided-search.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-pair-0017-presentation-pair-0017-contact-guided-search",
+      "title": "Insert Peg — trial 0017 · contact search + |Fz|",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-pair-0017-presentation-pair-0017-contact-guided-search.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-pair-0017-presentation-pair-0017-contact-guided-search.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-pair-0021-force-profile-first-30s",
+      "title": "Insert Peg — trial 0021 · signed Fz · first 30 s",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-pair-0021-force-profile-first-30s.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-pair-0021-force-profile-first-30s.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-pair-0021-force-profile-first-30s-absolute",
+      "title": "Insert Peg — trial 0021 · |Fz| · first 30 s",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-pair-0021-force-profile-first-30s-absolute.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-pair-0021-force-profile-first-30s-absolute.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-pair-0021-force-profile-full",
+      "title": "Insert Peg — trial 0021 · signed Fz · full trace",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-pair-0021-force-profile-full.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-pair-0021-force-profile-full.webp"
+    },
+    {
+      "id": "highlight-insert-peg",
+      "title": "Insert Peg — selected comparison",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/highlight-insert-peg.mp4",
+      "poster": "assets/images/posters/highlight-insert-peg.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-review-draft-pair-0021-force-profile-first-30s",
+      "title": "Insert Peg — trial 0021 · signed Fz · first 30 s · draft",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-review-draft-pair-0021-force-profile-first-30s.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-review-draft-pair-0021-force-profile-first-30s.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-review-draft-pair-0021-force-profile-full",
+      "title": "Insert Peg — trial 0021 · signed Fz · full trace · draft",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-review-draft-pair-0021-force-profile-full.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-review-draft-pair-0021-force-profile-full.webp"
+    },
+    {
+      "id": "peg-forceprofile-videos-review-pair-0017-presentation-ymax60-pair-0017-contact-guided-search",
+      "title": "Insert Peg — trial 0017 · contact search + |Fz| · 60 N axis",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/peg-forceprofile-videos-review-pair-0017-presentation-ymax60-pair-0017-contact-guided-search.mp4",
+      "poster": "assets/images/posters/peg-forceprofile-videos-review-pair-0017-presentation-ymax60-pair-0017-contact-guided-search.webp"
+    },
+    {
+      "id": "overview-all-tasks",
+      "title": "All-task evaluation overview",
+      "methods": [
+        "pi0",
+        "pi05",
+        "gr00t",
+        "lawam",
+        "acp",
+        "hybridil",
+        "force-policy",
+        "forcevla",
+        "ta-vla"
+      ],
+      "src": "assets/videos/overview-all-tasks.mp4",
+      "poster": "assets/images/posters/overview-all-tasks.webp"
+    },
+    {
+      "id": "robot-eval-videos-all-tasks-with-table1-table1-3s",
+      "title": "Table I — overview closing card",
+      "methods": [],
+      "src": "assets/videos/robot-eval-videos-all-tasks-with-table1-table1-3s.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-all-tasks-with-table1-table1-3s.webp"
+    },
+    {
+      "id": "ev-charger-pi0-baseline",
+      "title": "EV Charger — π0 LoRA",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/ev-charger-pi0-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-pi0-baseline.webp"
+    },
+    {
+      "id": "ev-charger-pi0-fp2",
+      "title": "EV Charger — π0 LoRA + FP2",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/ev-charger-pi0-fp2.mp4",
+      "poster": "assets/images/posters/ev-charger-pi0-fp2.webp"
+    },
+    {
+      "id": "ev-charger-pi05-baseline",
+      "title": "EV Charger — π0.5",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/ev-charger-pi05-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-pi05-baseline.webp"
+    },
+    {
+      "id": "ev-charger-pi05-fp2",
+      "title": "EV Charger — π0.5 + FP2",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/ev-charger-pi05-fp2.mp4",
+      "poster": "assets/images/posters/ev-charger-pi05-fp2.webp"
+    },
+    {
+      "id": "ev-charger-gr00t-baseline",
+      "title": "EV Charger — GR00T N1.7",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/ev-charger-gr00t-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-gr00t-baseline.webp"
+    },
+    {
+      "id": "ev-charger-gr00t-fp2",
+      "title": "EV Charger — GR00T N1.7 + FP2",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/ev-charger-gr00t-fp2.mp4",
+      "poster": "assets/images/posters/ev-charger-gr00t-fp2.webp"
+    },
+    {
+      "id": "ev-charger-lawam-baseline",
+      "title": "EV Charger — LaWAM",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/ev-charger-lawam-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-lawam-baseline.webp"
+    },
+    {
+      "id": "ev-charger-lawam-fp2",
+      "title": "EV Charger — LaWAM + FP2",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/ev-charger-lawam-fp2.mp4",
+      "poster": "assets/images/posters/ev-charger-lawam-fp2.webp"
+    },
+    {
+      "id": "ev-charger-acp-baseline",
+      "title": "EV Charger — ACP",
+      "methods": [
+        "acp"
+      ],
+      "src": "assets/videos/ev-charger-acp-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-acp-baseline.webp"
+    },
+    {
+      "id": "ev-charger-hybridil-baseline",
+      "title": "EV Charger — HybridIL",
+      "methods": [
+        "hybridil"
+      ],
+      "src": "assets/videos/ev-charger-hybridil-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-hybridil-baseline.webp"
+    },
+    {
+      "id": "ev-charger-forcevla-baseline",
+      "title": "EV Charger — ForceVLA",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/ev-charger-forcevla-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-forcevla-baseline.webp"
+    },
+    {
+      "id": "ev-charger-ta-vla-baseline",
+      "title": "EV Charger — TA-VLA",
+      "methods": [
+        "ta-vla"
+      ],
+      "src": "assets/videos/ev-charger-ta-vla-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-ta-vla-baseline.webp"
+    },
+    {
+      "id": "ev-charger-fp2-comparison",
+      "title": "EV Charger — baseline / FP2 comparison",
+      "methods": [
+        "pi0",
+        "pi05",
+        "gr00t",
+        "lawam"
+      ],
+      "src": "assets/videos/ev-charger-fp2-comparison.mp4",
+      "poster": "assets/images/posters/ev-charger-fp2-comparison.webp"
+    },
+    {
+      "id": "ev-charger-baselines",
+      "title": "EV Charger — baseline methods",
+      "methods": [
+        "acp",
+        "hybridil",
+        "forcevla",
+        "ta-vla"
+      ],
+      "src": "assets/videos/ev-charger-baselines.mp4",
+      "poster": "assets/images/posters/ev-charger-baselines.webp"
+    },
+    {
+      "id": "flip-box-pi0-baseline",
+      "title": "Flip Box — π0 LoRA",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/flip-box-pi0-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-pi0-baseline.webp"
+    },
+    {
+      "id": "flip-box-pi0-fp2",
+      "title": "Flip Box — π0 LoRA + FP2",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/flip-box-pi0-fp2.mp4",
+      "poster": "assets/images/posters/flip-box-pi0-fp2.webp"
+    },
+    {
+      "id": "flip-box-pi05-baseline",
+      "title": "Flip Box — π0.5",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/flip-box-pi05-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-pi05-baseline.webp"
+    },
+    {
+      "id": "flip-box-pi05-fp2",
+      "title": "Flip Box — π0.5 + FP2",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/flip-box-pi05-fp2.mp4",
+      "poster": "assets/images/posters/flip-box-pi05-fp2.webp"
+    },
+    {
+      "id": "flip-box-gr00t-baseline",
+      "title": "Flip Box — GR00T N1.7",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/flip-box-gr00t-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-gr00t-baseline.webp"
+    },
+    {
+      "id": "flip-box-gr00t-fp2",
+      "title": "Flip Box — GR00T N1.7 + FP2",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/flip-box-gr00t-fp2.mp4",
+      "poster": "assets/images/posters/flip-box-gr00t-fp2.webp"
+    },
+    {
+      "id": "flip-box-lawam-baseline",
+      "title": "Flip Box — LaWAM",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/flip-box-lawam-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-lawam-baseline.webp"
+    },
+    {
+      "id": "flip-box-lawam-fp2",
+      "title": "Flip Box — LaWAM + FP2",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/flip-box-lawam-fp2.mp4",
+      "poster": "assets/images/posters/flip-box-lawam-fp2.webp"
+    },
+    {
+      "id": "flip-box-acp-baseline",
+      "title": "Flip Box — ACP",
+      "methods": [
+        "acp"
+      ],
+      "src": "assets/videos/flip-box-acp-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-acp-baseline.webp"
+    },
+    {
+      "id": "flip-box-force-policy-baseline",
+      "title": "Flip Box — Force Policy",
+      "methods": [
+        "force-policy"
+      ],
+      "src": "assets/videos/flip-box-force-policy-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-force-policy-baseline.webp"
+    },
+    {
+      "id": "flip-box-hybridil-baseline",
+      "title": "Flip Box — HybridIL",
+      "methods": [
+        "hybridil"
+      ],
+      "src": "assets/videos/flip-box-hybridil-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-hybridil-baseline.webp"
+    },
+    {
+      "id": "flip-box-forcevla-baseline",
+      "title": "Flip Box — ForceVLA",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/flip-box-forcevla-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-forcevla-baseline.webp"
+    },
+    {
+      "id": "flip-box-ta-vla-baseline",
+      "title": "Flip Box — TA-VLA",
+      "methods": [
+        "ta-vla"
+      ],
+      "src": "assets/videos/flip-box-ta-vla-baseline.mp4",
+      "poster": "assets/images/posters/flip-box-ta-vla-baseline.webp"
+    },
+    {
+      "id": "flip-box-fp2-comparison",
+      "title": "Flip Box — baseline / FP2 comparison",
+      "methods": [
+        "pi0",
+        "pi05",
+        "gr00t",
+        "lawam"
+      ],
+      "src": "assets/videos/flip-box-fp2-comparison.mp4",
+      "poster": "assets/images/posters/flip-box-fp2-comparison.webp"
+    },
+    {
+      "id": "flip-box-baselines",
+      "title": "Flip Box — baseline methods",
+      "methods": [
+        "acp",
+        "hybridil",
+        "forcevla",
+        "ta-vla"
+      ],
+      "src": "assets/videos/flip-box-baselines.mp4",
+      "poster": "assets/images/posters/flip-box-baselines.webp"
+    },
+    {
+      "id": "robot-eval-videos-flip-box-pi05-fp2-global",
+      "title": "Flip Box — π₀.₅ + FP2 · global-view edit",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/robot-eval-videos-flip-box-pi05-fp2-global.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-flip-box-pi05-fp2-global.webp"
+    },
+    {
+      "id": "robot-eval-videos-flip-box-pi05-fp2-global-30s-4x",
+      "title": "Flip Box — π₀.₅ + FP2 · alternate edit",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/robot-eval-videos-flip-box-pi05-fp2-global-30s-4x.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-flip-box-pi05-fp2-global-30s-4x.webp"
+    },
+    {
+      "id": "robot-eval-videos-flip-box-pi05-fp2-global-30s-compact",
+      "title": "Flip Box — π₀.₅ + FP2 · compact edit",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/robot-eval-videos-flip-box-pi05-fp2-global-30s-compact.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-flip-box-pi05-fp2-global-30s-compact.webp"
+    },
+    {
+      "id": "robot-eval-videos-force-vla-aligned-preview",
+      "title": "Flip Box — ForceVLA preview · aligned edit",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/robot-eval-videos-force-vla-aligned-preview.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-force-vla-aligned-preview.webp"
+    },
+    {
+      "id": "robot-eval-videos-force-vla-min4x-preview",
+      "title": "Flip Box — ForceVLA preview · minimum 4× edit",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/robot-eval-videos-force-vla-min4x-preview.mp4",
+      "poster": "assets/images/posters/robot-eval-videos-force-vla-min4x-preview.webp"
+    },
+    {
+      "id": "generalization-native",
+      "title": "Generalization — FP2",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/generalization-native.mp4",
+      "poster": "assets/images/posters/generalization-native.webp"
+    },
+    {
+      "id": "generalization-wrist-action",
+      "title": "Generalization — extra wrist vision + action re-generation",
+      "methods": [
+        "pi05",
+        "ablation-wrist-action"
+      ],
+      "src": "assets/videos/generalization-wrist-action.mp4",
+      "poster": "assets/images/posters/generalization-wrist-action.webp"
+    },
+    {
+      "id": "generalization-wrist",
+      "title": "Generalization — extra wrist vision",
+      "methods": [
+        "pi05",
+        "ablation-wrist"
+      ],
+      "src": "assets/videos/generalization-wrist.mp4",
+      "poster": "assets/images/posters/generalization-wrist.webp"
+    },
+    {
+      "id": "generalization-action",
+      "title": "Generalization — action re-generation",
+      "methods": [
+        "pi05",
+        "ablation-action"
+      ],
+      "src": "assets/videos/generalization-action.mp4",
+      "poster": "assets/images/posters/generalization-action.webp"
+    },
+    {
+      "id": "generalization-action-expert",
+      "title": "Generalization — action-expert latent",
+      "methods": [
+        "pi05",
+        "ablation-action-expert"
+      ],
+      "src": "assets/videos/generalization-action-expert.mp4",
+      "poster": "assets/images/posters/generalization-action-expert.webp"
+    },
+    {
+      "id": "generalization-global-mean",
+      "title": "Generalization — average-pooled context",
+      "methods": [
+        "pi05",
+        "ablation-global-mean"
+      ],
+      "src": "assets/videos/generalization-global-mean.mp4",
+      "poster": "assets/images/posters/generalization-global-mean.webp"
+    },
+    {
+      "id": "generalization-fp2-vs-wrist-action",
+      "title": "Generalization — FP2 vs wrist + action",
+      "methods": [
+        "pi05",
+        "ablation-wrist-action"
+      ],
+      "src": "assets/videos/generalization-fp2-vs-wrist-action.mp4",
+      "poster": "assets/images/posters/generalization-fp2-vs-wrist-action.webp"
+    },
+    {
+      "id": "generalization-wrist-vs-action",
+      "title": "Generalization — wrist vs action",
+      "methods": [
+        "pi05",
+        "ablation-wrist",
+        "ablation-action"
+      ],
+      "src": "assets/videos/generalization-wrist-vs-action.mp4",
+      "poster": "assets/images/posters/generalization-wrist-vs-action.webp"
+    },
+    {
+      "id": "generalization-representation",
+      "title": "Generalization — representation comparison",
+      "methods": [
+        "pi05",
+        "ablation-action-expert",
+        "ablation-global-mean"
+      ],
+      "src": "assets/videos/generalization-representation.mp4",
+      "poster": "assets/images/posters/generalization-representation.webp"
+    },
+    {
+      "id": "insert-peg-pi0-baseline",
+      "title": "Insert Peg — π0 LoRA",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/insert-peg-pi0-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-pi0-baseline.webp"
+    },
+    {
+      "id": "insert-peg-pi0-fp2",
+      "title": "Insert Peg — π0 LoRA + FP2",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/insert-peg-pi0-fp2.mp4",
+      "poster": "assets/images/posters/insert-peg-pi0-fp2.webp"
+    },
+    {
+      "id": "insert-peg-pi05-baseline",
+      "title": "Insert Peg — π0.5",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/insert-peg-pi05-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-pi05-baseline.webp"
+    },
+    {
+      "id": "insert-peg-pi05-fp2",
+      "title": "Insert Peg — π0.5 + FP2",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/insert-peg-pi05-fp2.mp4",
+      "poster": "assets/images/posters/insert-peg-pi05-fp2.webp"
+    },
+    {
+      "id": "insert-peg-gr00t-baseline",
+      "title": "Insert Peg — GR00T N1.7",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/insert-peg-gr00t-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-gr00t-baseline.webp"
+    },
+    {
+      "id": "insert-peg-gr00t-fp2",
+      "title": "Insert Peg — GR00T N1.7 + FP2",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/insert-peg-gr00t-fp2.mp4",
+      "poster": "assets/images/posters/insert-peg-gr00t-fp2.webp"
+    },
+    {
+      "id": "insert-peg-lawam-baseline",
+      "title": "Insert Peg — LaWAM",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/insert-peg-lawam-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-lawam-baseline.webp"
+    },
+    {
+      "id": "insert-peg-lawam-fp2",
+      "title": "Insert Peg — LaWAM + FP2",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/insert-peg-lawam-fp2.mp4",
+      "poster": "assets/images/posters/insert-peg-lawam-fp2.webp"
+    },
+    {
+      "id": "insert-peg-acp-baseline",
+      "title": "Insert Peg — ACP",
+      "methods": [
+        "acp"
+      ],
+      "src": "assets/videos/insert-peg-acp-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-acp-baseline.webp"
+    },
+    {
+      "id": "insert-peg-hybridil-baseline",
+      "title": "Insert Peg — HybridIL",
+      "methods": [
+        "hybridil"
+      ],
+      "src": "assets/videos/insert-peg-hybridil-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-hybridil-baseline.webp"
+    },
+    {
+      "id": "insert-peg-forcevla-baseline",
+      "title": "Insert Peg — ForceVLA",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/insert-peg-forcevla-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-forcevla-baseline.webp"
+    },
+    {
+      "id": "insert-peg-ta-vla-baseline",
+      "title": "Insert Peg — TA-VLA",
+      "methods": [
+        "ta-vla"
+      ],
+      "src": "assets/videos/insert-peg-ta-vla-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-ta-vla-baseline.webp"
+    },
+    {
+      "id": "insert-peg-fp2-comparison",
+      "title": "Insert Peg — baseline / FP2 comparison",
+      "methods": [
+        "pi0",
+        "pi05",
+        "gr00t",
+        "lawam"
+      ],
+      "src": "assets/videos/insert-peg-fp2-comparison.mp4",
+      "poster": "assets/images/posters/insert-peg-fp2-comparison.webp"
+    },
+    {
+      "id": "insert-peg-baselines",
+      "title": "Insert Peg — baseline methods",
+      "methods": [
+        "acp",
+        "hybridil",
+        "forcevla",
+        "ta-vla"
+      ],
+      "src": "assets/videos/insert-peg-baselines.mp4",
+      "poster": "assets/images/posters/insert-peg-baselines.webp"
+    },
+    {
+      "id": "wipe-curve-pi0-baseline",
+      "title": "Wipe Curve — π0 LoRA",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/wipe-curve-pi0-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-pi0-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-pi0-fp2",
+      "title": "Wipe Curve — π0 LoRA + FP2",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/wipe-curve-pi0-fp2.mp4",
+      "poster": "assets/images/posters/wipe-curve-pi0-fp2.webp"
+    },
+    {
+      "id": "wipe-curve-pi05-baseline",
+      "title": "Wipe Curve — π0.5",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/wipe-curve-pi05-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-pi05-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-pi05-fp2",
+      "title": "Wipe Curve — π0.5 + FP2",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/wipe-curve-pi05-fp2.mp4",
+      "poster": "assets/images/posters/wipe-curve-pi05-fp2.webp"
+    },
+    {
+      "id": "wipe-curve-gr00t-baseline",
+      "title": "Wipe Curve — GR00T N1.7",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/wipe-curve-gr00t-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-gr00t-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-gr00t-fp2",
+      "title": "Wipe Curve — GR00T N1.7 + FP2",
+      "methods": [
+        "gr00t"
+      ],
+      "src": "assets/videos/wipe-curve-gr00t-fp2.mp4",
+      "poster": "assets/images/posters/wipe-curve-gr00t-fp2.webp"
+    },
+    {
+      "id": "wipe-curve-lawam-baseline",
+      "title": "Wipe Curve — LaWAM",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/wipe-curve-lawam-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-lawam-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-lawam-fp2",
+      "title": "Wipe Curve — LaWAM + FP2",
+      "methods": [
+        "lawam"
+      ],
+      "src": "assets/videos/wipe-curve-lawam-fp2.mp4",
+      "poster": "assets/images/posters/wipe-curve-lawam-fp2.webp"
+    },
+    {
+      "id": "wipe-curve-acp-baseline",
+      "title": "Wipe Curve — ACP",
+      "methods": [
+        "acp"
+      ],
+      "src": "assets/videos/wipe-curve-acp-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-acp-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-hybridil-baseline",
+      "title": "Wipe Curve — HybridIL",
+      "methods": [
+        "hybridil"
+      ],
+      "src": "assets/videos/wipe-curve-hybridil-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-hybridil-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-forcevla-baseline",
+      "title": "Wipe Curve — ForceVLA",
+      "methods": [
+        "forcevla"
+      ],
+      "src": "assets/videos/wipe-curve-forcevla-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-forcevla-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-ta-vla-baseline",
+      "title": "Wipe Curve — TA-VLA",
+      "methods": [
+        "ta-vla"
+      ],
+      "src": "assets/videos/wipe-curve-ta-vla-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-ta-vla-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-fp2-comparison",
+      "title": "Wipe Curve — baseline / FP2 comparison",
+      "methods": [
+        "pi0",
+        "pi05",
+        "gr00t",
+        "lawam"
+      ],
+      "src": "assets/videos/wipe-curve-fp2-comparison.mp4",
+      "poster": "assets/images/posters/wipe-curve-fp2-comparison.webp"
+    },
+    {
+      "id": "wipe-curve-baselines",
+      "title": "Wipe Curve — baseline methods",
+      "methods": [
+        "acp",
+        "hybridil",
+        "forcevla",
+        "ta-vla"
+      ],
+      "src": "assets/videos/wipe-curve-baselines.mp4",
+      "poster": "assets/images/posters/wipe-curve-baselines.webp"
+    },
+    {
+      "id": "highlight-ev-charger",
+      "title": "EV Charger — selected comparison",
+      "methods": [
+        "pi0",
+        "gr00t"
+      ],
+      "src": "assets/videos/highlight-ev-charger.mp4",
+      "poster": "assets/images/posters/highlight-ev-charger.webp"
+    },
+    {
+      "id": "highlight-flip-box",
+      "title": "Flip Box — selected comparison",
+      "methods": [
+        "pi05",
+        "pi0"
+      ],
+      "src": "assets/videos/highlight-flip-box.mp4",
+      "poster": "assets/images/posters/highlight-flip-box.webp"
+    },
+    {
+      "id": "highlight-wipe-curve",
+      "title": "Wipe Curve — selected comparison",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/highlight-wipe-curve.mp4",
+      "poster": "assets/images/posters/highlight-wipe-curve.webp"
+    },
+    {
+      "id": "unified-flip-box",
+      "title": "Flip Box — synchronized paired rollout",
+      "methods": [
+        "pi05"
+      ],
+      "src": "assets/videos/unified-flip-box.mp4",
+      "poster": "assets/images/posters/unified-flip-box.webp"
+    },
+    {
+      "id": "unified-insert-peg",
+      "title": "Insert Peg — synchronized paired rollout",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/unified-insert-peg.mp4",
+      "poster": "assets/images/posters/unified-insert-peg.webp"
+    },
+    {
+      "id": "unified-wipe-curve",
+      "title": "Wipe Curve — synchronized paired rollout",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/unified-wipe-curve.mp4",
+      "poster": "assets/images/posters/unified-wipe-curve.webp"
+    },
+    {
+      "id": "unified-ev-charger",
+      "title": "Insert EV Charger — synchronized paired rollout",
+      "methods": [
+        "pi0"
+      ],
+      "src": "assets/videos/unified-ev-charger.mp4",
+      "poster": "assets/images/posters/unified-ev-charger.webp"
+    },
+    {
+      "id": "ev-charger-force-policy-baseline",
+      "title": "EV Charger — Force Policy",
+      "methods": [
+        "force-policy"
+      ],
+      "src": "assets/videos/ev-charger-force-policy-baseline.mp4",
+      "poster": "assets/images/posters/ev-charger-force-policy-baseline.webp"
+    },
+    {
+      "id": "insert-peg-force-policy-baseline",
+      "title": "Peg in Hole — Force Policy",
+      "methods": [
+        "force-policy"
+      ],
+      "src": "assets/videos/insert-peg-force-policy-baseline.mp4",
+      "poster": "assets/images/posters/insert-peg-force-policy-baseline.webp"
+    },
+    {
+      "id": "wipe-curve-force-policy-baseline",
+      "title": "Wipe Curve — Force Policy",
+      "methods": [
+        "force-policy"
+      ],
+      "src": "assets/videos/wipe-curve-force-policy-baseline.mp4",
+      "poster": "assets/images/posters/wipe-curve-force-policy-baseline.webp"
+    }
+  ]
+}

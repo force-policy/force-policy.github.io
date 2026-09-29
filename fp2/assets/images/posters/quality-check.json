@@ -1,0 +1,26 @@
+{
+  "samples": [
+    {
+      "id": "highlight-flip-box",
+      "sampleTime": 4,
+      "ssim": "[Parsed_ssim_0 @ 0x784a9c002280] SSIM Y:0.981877 (17.417667) U:0.992614 (21.315908) V:0.993081 (21.599377) All:0.985534 (18.396423)",
+      "contactSheet": "assets/images/posters/qa-highlight-flip-box.jpg",
+      "layout": "source on top, web encode below"
+    },
+    {
+      "id": "generalization-fp2-vs-wrist-action",
+      "sampleTime": 4,
+      "ssim": "[Parsed_ssim_0 @ 0x7c6a78002280] SSIM Y:0.982828 (17.651800) U:0.986998 (18.859765) V:0.988151 (19.263239) All:0.984410 (18.071580)",
+      "contactSheet": "assets/images/posters/qa-generalization-fp2-vs-wrist-action.jpg",
+      "layout": "source on top, web encode below"
+    },
+    {
+      "id": "overview-all-tasks",
+      "sampleTime": 4,
+      "ssim": "[Parsed_ssim_0 @ 0x77558c002280] SSIM Y:0.982007 (17.449026) U:0.984181 (18.008264) V:0.987422 (19.003897) All:0.983272 (17.765571)",
+      "contactSheet": "assets/images/posters/qa-overview-all-tasks.jpg",
+      "layout": "source on top, web encode below"
+    }
+  ],
+  "note": "Frame-level objective checks, not an exhaustive human review."
+}
